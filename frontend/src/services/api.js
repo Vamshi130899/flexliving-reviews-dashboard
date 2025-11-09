@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://127.0.0.1:8000/api/reviews"; // FastAPI backend URL
+const API_BASE_URL = "https://flexliving-backend-xlwz.onrender.com/api"; // FastAPI backend URL
 
 export const fetchReviews = async () => {
   try {
