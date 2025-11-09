@@ -1,11 +1,13 @@
-import axios from "axios";
-
-const API_BASE_URL = "https://flexliving-backend-xlwz.onrender.com/api"; // FastAPI backend URL
+const BASE_URL =
+  import.meta.env.MODE === "development"
+    ? "http://127.0.0.1:8000"
+    : "https://flexliving-backend-xlwz.onrender.com"; // Render backend URL
 
 export const fetchReviews = async () => {
   try {
-    const response = await axios.get(API_BASE_URL);
-    return response.data.reviews; // assuming { status, reviews } from backend
+    const response = await fetch(`${BASE_URL}/api/reviews/`);
+    const data = await response.json();
+    return data.reviews || [];
   } catch (error) {
     console.error("Error fetching reviews:", error);
     return [];
