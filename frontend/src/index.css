@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* theme toggle */
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light mode */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Dark mode */
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
