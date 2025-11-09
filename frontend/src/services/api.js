@@ -1,7 +1,7 @@
 const BASE_URL =
   import.meta.env.MODE === "development"
     ? "http://127.0.0.1:8000"
-    : "https://flexliving-backend-xlwz.onrender.com"; // Render backend URL
+    : "https://flexliving-backend-x1wz.onrender.com"; // Render backend URL
 
 export const fetchReviews = async () => {
   try {
