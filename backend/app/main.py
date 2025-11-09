@@ -4,9 +4,15 @@ from app.routers import reviews
 
 app = FastAPI(title="FlexLiving Reviews API")
 
+origins = [
+    "http://localhost:5173",  # local frontend
+    "https://flexliving-reviews-dashboard-zg9s.onrender.com",  # Render frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
