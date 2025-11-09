@@ -17,6 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# temporary test route
+@app.get("/test")
+def test():
+    return {"message": "router check passed"}
+
 app.include_router(reviews.router, prefix="/api/reviews", tags=["Reviews"])
 
 @app.get("/")
