@@ -25,7 +25,7 @@ def fetch_reviews():
         reviews.append(
             {
                 "id": r["id"],
-                "listing": r["listingName"],
+                "listing": r.get("listingName", "N/A"),
                 "guest": r["guestName"],
                 "avg_rating": round(avg, 1),
                 "review_text": r["publicReview"],

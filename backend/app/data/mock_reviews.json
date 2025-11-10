@@ -26,6 +26,20 @@
       "submittedAt": "2020-09-02 12:15:00",
       "guestName": "Lucy Brown",
       "listingName": "1A Soho Loft"
+    },
+    {
+      "id": 7455,
+      "type": "guest-to-host",
+      "status": "published",
+      "publicReview": "The check-in process was confusing and the apartment wasn’t cleaned properly. The host responded late and overall experience was disappointing.",
+      "reviewCategory": [
+        {"category": "cleanliness", "rating": 4},
+        {"category": "communication", "rating": 5},
+        {"category": "location", "rating": 6}
+    ],
+      "submittedAt": "2020-09-20 14:10:00",
+      "guestName": "Emma Roberts",
+      "listingName": "4D Central Park View Flat"
     }
   ]
 }

@@ -26,7 +26,7 @@ def get_live_reviews():
             avg = sum(c["rating"] for c in r.get("reviewCategory", [])) / len(r.get("reviewCategory", [])) or 0
             reviews.append({
                 "id": r["id"],
-                "listing": r["listingName"],
+                "listing": r.get("listingName", "N/A"),
                 "guest": r["guestName"],
                 "avg_rating": round(avg, 1),
                 "categories": [
