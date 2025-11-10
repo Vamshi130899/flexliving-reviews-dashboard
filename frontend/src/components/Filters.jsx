@@ -10,6 +10,7 @@ export default function Filters({ onFilterChange }) {
         <option value="2B N1 A - 29 Shoreditch Heights">
           2B N1 A - 29 Shoreditch Heights
         </option>
+        <option value="4D Central Park View Flat">4D Central Park View Flat</option>
       </select>
     </div>
   );
